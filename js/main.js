@@ -26,7 +26,7 @@ function SetMarkerSymbols () {
 	});
 }
 function CreateMap () {
-	map = L.map('map').setView([35.83, -78.6436],11);
+	map = L.map('map').setView([36.0726, -79.7920],11);
         L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png',{minZoom: 10, attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'}).addTo(map);
 	if (Modernizr.geolocation) {
         L.control.locate().addTo(map);
